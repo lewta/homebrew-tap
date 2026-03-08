@@ -17,22 +17,22 @@ cask "sendit" do
   on_macos do
     on_intel do
       url "https://github.com/lewta/sendit/releases/download/v#{version}/sendit_#{version}_darwin_amd64.tar.gz"
-      sha256 "894bdee670d53761c7a7a5f82db35b963d441f4989d9bac9d690ff56599da2dc"
+      sha256 "cae4d4fdd700a09210314668c7c641e6de1e9f06b61ad0a007011e097d6ee94f"
     end
     on_arm do
       url "https://github.com/lewta/sendit/releases/download/v#{version}/sendit_#{version}_darwin_arm64.tar.gz"
-      sha256 "18ed79cc8c05ffe6c45763bc8fc09a053acdf8006bd5ab36de4e7f065e170295"
+      sha256 "8d6a7ea44604522c126ef003f7bad8ca1d75ac39139af7c2515d6c10ede4c57c"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/lewta/sendit/releases/download/v#{version}/sendit_#{version}_linux_amd64.tar.gz"
-      sha256 "759c068d419ba86872578c824a54fbc5041151dd9b711d84d044df92ba6ab22e"
+      sha256 "0cadf76bd39b61414a63059cd5692e556f35af8c8ee43ae3e8330f47c7d9368a"
     end
     on_arm do
       url "https://github.com/lewta/sendit/releases/download/v#{version}/sendit_#{version}_linux_arm64.tar.gz"
-      sha256 "89a5307c2f69452f01c35559b140d7eb84c2797a68a2f6d6ca0140a08368aa34"
+      sha256 "14fe845f7d68620f233861677f1fe79203b4f5d23b19c7d0e07636cd5a2c3beb"
     end
   end
 
