@@ -1,6 +1,18 @@
 # homebrew-tap
 
-Homebrew tap for [sendit](https://github.com/lewta/sendit) — a traffic generation tool for HTTP, DNS, WebSocket, and headless-browser targets.
+Homebrew tap for tools by [lewta](https://github.com/lewta).
+
+## Add the tap
+
+```sh
+brew tap lewta/tap
+```
+
+## Tools
+
+| Tool | Description |
+|---|---|
+| [sendit](https://github.com/lewta/sendit) | Traffic generation tool for HTTP, DNS, WebSocket, and headless-browser targets. |
 
 ## Install
 
@@ -8,7 +20,7 @@ Homebrew tap for [sendit](https://github.com/lewta/sendit) — a traffic generat
 brew install lewta/tap/sendit
 ```
 
-This installs the `sendit` binary and shell completions for bash, zsh, and fish automatically.
+Shell completions for bash, zsh, and fish are installed automatically.
 
 ## Upgrade
 
