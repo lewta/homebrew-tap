@@ -3,7 +3,7 @@ cask "sendit" do
   name "sendit"
   desc "Traffic generation tool for HTTP, DNS, WebSocket, and headless-browser targets."
   homepage "https://github.com/lewta/sendit"
-  version "0.10.4"
+  version "0.10.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,31 +17,24 @@ cask "sendit" do
   on_macos do
     on_intel do
       url "https://github.com/lewta/sendit/releases/download/v#{version}/sendit_#{version}_darwin_amd64.tar.gz"
-      sha256 "ddbaf78edd5fd7911e3e59e271a98c25251cf95ead1ad830198c4c59150b8885"
+      sha256 "a1e6600b4f6d84ca177f6d29756b077b2ca868a54f61d3c78af75a944fa53f36"
     end
     on_arm do
       url "https://github.com/lewta/sendit/releases/download/v#{version}/sendit_#{version}_darwin_arm64.tar.gz"
-      sha256 "56aded7ed56138dbebc356f097a6fd431163c5f57d61fc06a54748c990a08463"
+      sha256 "78da689274c8b14a84bf77df9123f20a99f20985125f033dfc8dea759a6dbb66"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/lewta/sendit/releases/download/v#{version}/sendit_#{version}_linux_amd64.tar.gz"
-      sha256 "73da4680d4bc9a994ed03057eded2cd169d648633f8f42357ecd35bb766e2699"
+      sha256 "a4596a7445fcaade5caae656ebfe7effd94a666b864240534fa24c10e4f33102"
     end
     on_arm do
       url "https://github.com/lewta/sendit/releases/download/v#{version}/sendit_#{version}_linux_arm64.tar.gz"
-      sha256 "ad4b0d2e6339d38904ee65847bbc198e145a7ff0456bce952cffa36752609427"
+      sha256 "5a8d937aa83578479ca5ba13b3edd9aebc113c539a95efba7c7f7d5e9e481286"
     end
   end
-
-  # TODO(v0.10.4): remove caveats once darwin binaries are notarized.
-  caveats <<~EOS
-    macOS Gatekeeper may block sendit because the binary is not yet
-    notarized. If you see an "Apple could not verify" warning, run:
-      sudo xattr -d com.apple.quarantine #{HOMEBREW_PREFIX}/bin/sendit
-  EOS
 
   # No zap stanza required
 end
