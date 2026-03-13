@@ -3,7 +3,7 @@ cask "sendit" do
   name "sendit"
   desc "Traffic generation tool for HTTP, DNS, WebSocket, and headless-browser targets."
   homepage "https://github.com/lewta/sendit"
-  version "0.12.0"
+  version "0.12.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "sendit" do
   on_macos do
     on_intel do
       url "https://github.com/lewta/sendit/releases/download/v#{version}/sendit_#{version}_darwin_amd64.tar.gz"
-      sha256 "9da1c92d026f9b4cbdeb4356c1bbb3bd7333ce22652b76f182344dabae434737"
+      sha256 "2a972484ac97b09e8c33e25645ef1f165d8364b174b269bd7563a5c2986d47e4"
     end
     on_arm do
       url "https://github.com/lewta/sendit/releases/download/v#{version}/sendit_#{version}_darwin_arm64.tar.gz"
-      sha256 "f032a463e055d8d2d52ae73ebfb222d6ee3c293db9c1e5399c4339608f08ef9b"
+      sha256 "ff6d3599a0d8a83891e99c9a1faa3bb00c12e465bd26f0f8f5dd4120565879fb"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/lewta/sendit/releases/download/v#{version}/sendit_#{version}_linux_amd64.tar.gz"
-      sha256 "0301796c2848cda07cb195e0b0717fb57949a1040c3522738dd21275450370a4"
+      sha256 "cde0106b2943b11c18648f6b615f1e11bf0b13d53791d4491661d349855b98b0"
     end
     on_arm do
       url "https://github.com/lewta/sendit/releases/download/v#{version}/sendit_#{version}_linux_arm64.tar.gz"
-      sha256 "34e9688d8932ab1d7979b5b21774a776bb258f572e2fff560e9c6fd9a45c312d"
+      sha256 "85f2e28ad3a3fe0292eec5b5ba6f4ea7b4dbd0d3c6ba5f25d41a6cef024b5a0a"
     end
   end
 
